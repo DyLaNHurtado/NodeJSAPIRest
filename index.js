@@ -3,7 +3,7 @@ const app = require("./app");
 
 const user = "mongoadmin";
 const password = "mongopass";
-const serverUrl = "localhost";
+const serverUrl = "127.0.0.1";
 const serverPort = "27017";
 const dataBaseName = "mongodb";
 const URL_MONGODB ="mongodb://"+user+":"+password+"@"+ serverUrl + ":" + serverPort + "/" + dataBaseName + "?authSource=admin";
