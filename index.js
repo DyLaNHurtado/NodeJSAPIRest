@@ -8,7 +8,7 @@ const serverPort = "27017";
 const dataBaseName = "mongodb";
 const URL_MONGODB ="mongodb://"+user+":"+password+"@"+ serverUrl + ":" + serverPort + "/" + dataBaseName + "?authSource=admin";
 
-const PORT= 8888;
+const PORT= process.env.PORT || 8888;
 
 mongoose.connect(URL_MONGODB,
     {
